@@ -1,0 +1,72 @@
+:root {
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #1259C3;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*HEADER*/
+
+.home__body__header--nav-menu {
+    background-color: var(--colorCeleste);
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin: 30px 45% 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+/*BODY*/
+.home__body{
+    background-color: var(--colorAmarillo);
+}
+
+.home__body__main--products h2{
+    font-size: 24px;
+}
+.home__body__main--products p{
+    font-size: 18px;
+}
+.home__body__main--products h4{
+    font-size: 16px;
+}
+.home__body__main--products h3{
+    font-size: 16px;
+}
+
+/* Footer */
+.home__body__footer{
+    text-align: center;
+    background-color: white;
+}
+.home__body__footer a{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    color: var(--colorCeleste);
+    margin: 10px 45% 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+.home__body__footer h6{
+    margin-top: 10px;
+    text-align: left;
+}
