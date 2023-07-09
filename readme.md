@@ -1,6 +1,7 @@
 #Proyecto
 <h1 align="center">Mercado Liebre</h1>
 <h3>Ramas</h3>
-[Develop] (https://github.com/LucasIbanez13/Mercado-Liebre/tree/develop)
-[Structure] (https://github.com/LucasIbanez13/Mercado-Liebre/tree/structure)
-[Styles] (https://github.com/LucasIbanez13/Mercado-Liebre/tree/styles)
+<a href="https://github.com/LucasIbanez13/Mercado-Liebre/tree/develop">Develop</a>
+<a href="https://github.com/LucasIbanez13/Mercado-Liebre/tree/structure">Structure</a>
+<a href="https://github.com/LucasIbanez13/Mercado-Liebre/tree/styles">Styles</a>
+<a href="https://github.com/LucasIbanez13/Mercado-Liebre/tree/rama-mediaq">MediaQueries</a>
