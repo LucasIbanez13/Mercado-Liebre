@@ -59,6 +59,12 @@ li{
 .home__body{
     background-color: var(--colorAmarillo);
 }
+.home__body__main__banner{
+    width: 100%;
+}
+.home__body__main__banner img{
+    width: 100%;
+}
 .home__body__main {
     margin: 0 auto;
     width: 90%;
@@ -225,23 +231,19 @@ li{
     padding: 10px;
     border-radius: 5px;
 }
-.login__main__form__button a{
-    width: 100%;
-    margin: auto;
-    background-color: var(--colorCeleste);
-    border: 1px solid var(--colorCeleste);
-    color: white;
-    padding: 10px;
-}
 .login__main__form__button{
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin: auto;
     background-color: var(--colorCeleste);
     border: 1px solid var(--colorCeleste);
     padding: 10px;
     border-radius: 5px;
+}
+.login__main__form__button a{
+    color: white;
+}
+.login__main__form__button:hover{
+    background-color: #0022AA;
 }
 
 /* Footer */
@@ -300,6 +302,20 @@ li{
         right: 5px;
         position: absolute;
         top: -15;
+    }
+    .home__body__main--products-box-description i:hover{
+        animation: rotate 2s ease;
+    }
+    @keyframes rotate {
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(-90deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
     }
     .home__body--header--form{
         display: flex;
@@ -369,10 +385,30 @@ li{
     .home__body__header--nav-navegacion li a{
         color: black;
     }
+    .ocultar {
+        display: block;
+
+    }
+    .ocultar:hover .ocultar h3{
+        height: 30px;
+    }
+    .home__body__main--products-box-description h3{
+        display: none;
+    }
+    .home__body__main--products-box:hover .home__body__main--products-box-description h3{
+        display: block;
+        height: 20px;
+        box-shadow: 0px opx 10px rgb(100, 100, 100);
+    }
+    
 }
 @media (min-width: 769px) {
-    .home__body__main--products-box-description{
+    .home__body__main--products-box-description h3{
+        display: none;
+    }
+    .home__body__main--products-box:hover .home__body__main--products-box-description h3{
         display: block;
+        height: 20px;
         box-shadow: 0px opx 10px rgb(100, 100, 100);
     }
     .home__body__header--nav-navegacion{
@@ -407,7 +443,7 @@ li{
         border-radius: 50%;
         right: 5px;
         position: absolute;
-        top: -15;
+        top: -15px;
     }
     .home__body--header--form{
         display: flex;
@@ -450,11 +486,18 @@ li{
     }
     .home__body__main--products-box{
         background-color: var(--colorGrisClaro);
-        display: flex;
-        flex-direction: column;
     }
     .home__body__main--products-box-description{
         background-color: white;
         width: 100%;
     }  
+    .home__body__footer{
+        padding: 10px 0;
+    }
+    .home__body__footer__box{
+        display: flex;
+    }
+    .home__body__footer__box i:hover{
+        background-color: var(--colorAzul);
+    }
 }
